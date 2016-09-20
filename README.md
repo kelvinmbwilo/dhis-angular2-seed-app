@@ -1,4 +1,4 @@
-# ScorecardApp
+# DHIS2 SEED APP
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.14.
 
@@ -22,9 +22,14 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
 Before running the tests make sure you are serving the app via `ng serve`.
 
-## Deploying to Github Pages
+## Making Sure index.html works well with dhis
 
-Run `ng github-pages:deploy` to deploy to Github Pages.
+Open the dist folder and make sure the path to three imports for inline.js, styles.bundle.js and main.bundle.js points to the root of your app.
+
+## adding dhis2 app config file
+
+In the same dist file add a file manifest.webapp with the contents as specified at http://dhis2.github.io/dhis2-docs/master/en/developer/html/dhis2_developer_manual_full.html#apps_creating_apps or 
+following the standards from https://www.w3.org/TR/appmanifest/
 
 ## Further help
 
